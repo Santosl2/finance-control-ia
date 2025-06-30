@@ -20,6 +20,7 @@ A smart financial assistant that helps you track and manage your expenses using 
 - **Integrations**:
   - Telegram Bot API for messaging interface
   - Google Sheets API for data storage
+  - Open IA
 - **API**: AI library for text generation with tool integration
 
 ## Installation
@@ -44,6 +45,12 @@ A smart financial assistant that helps you track and manage your expenses using 
    DATABASE_URL=postgres://username:password@localhost:5432/finance_db
    TELEGRAM_BOT_TOKEN=your_telegram_bot_token
    GOOGLE_SPREADSHEET_ID=your_google_spreadsheet_id
+   TELEGRAM_CHAT_ID=your_telegram_chat_id
+   OLLAMA_API_URL=http://127.0.0.1:11434/api/
+   OPENAI_API_KEY=your_openai_api_key
+   FEATURE_FLAG_SAVE_TO_GOOGLE_SHEET=true
+
+   USE_OLLAMA=false // Set to true if you want to use Ollama for AI processing
    ```
 
 4. Set up Google Sheets credentials:
