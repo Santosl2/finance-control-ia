@@ -1,0 +1,20 @@
+{
+  // Show the path in the top window bar.
+  "window.title": "${rootName}${separator}${activeEditorMedium}",
+
+  // Formatting
+  "editor.formatOnSave": true,
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript][javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  // Extension settings
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    // eslint handles import sorting, don't let VSCode fight it
+    "source.organizeImports": "never"
+  }
+}

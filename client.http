@@ -1,0 +1,10 @@
+@host = localhost:3000/api
+
+### Tracking
+POST http://{{host}}/v1/ai-assistant
+Content-Type: application/json
+
+{
+  "prompt": "Gastei R$ 100,50 em um jantar romantico para a namorada"
+}
+
